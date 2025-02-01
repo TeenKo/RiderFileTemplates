@@ -1,10 +1,10 @@
 namespace ${DIR_PATH.substring(7).replace('/', '.')}
 {
     using System;
-
-    /// <summary>
-    /// ADD COMMENTS
-    /// </summary>
+    using UniGame.Runtime.Common;
+    using UniGame.UiSystem.Runtime;
+    using UniRx;
+    
 #[[#if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
 
@@ -13,7 +13,9 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif]]#
     [Serializable]
-    public struct ${FEATURENAME}Component
+    public class ${FEATURENAME}ViewModel : ViewModelBase
     {
+        public ReactiveProperty<string> text = new();
+        public SignalValueProperty<bool> click = new();
     }
 }

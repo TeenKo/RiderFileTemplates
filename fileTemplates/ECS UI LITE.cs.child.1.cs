@@ -1,14 +1,15 @@
 namespace ${DIR_PATH.substring(7).replace('/', '.')}
 {
     using System;
-    using Cysharp.Threading.Tasks;
+    using Leopotam.EcsLite;
     using Models;
-    using TMPro;
-    using UniGame.LeoEcs.ViewSystem.Converters;
-    using UniGame.Rx.Runtime.Extensions;
-    using UnityEngine.UI;
+    using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
+    using UniGame.LeoEcs.ViewSystem.Extensions;
 
-#[[#if ENABLE_IL2CPP
+    /// <summary>
+    /// System that handles clicking on ${FEATURENAME} buttons to trigger specific actions.
+    /// </summary>
+ #[[#if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
 
     [Il2CppSetOption(Option.NullChecks, false)]
@@ -16,17 +17,29 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif]]#
     [Serializable]
-    public class ${FEATURENAME}View : EcsUiView<${FEATURENAME}ViewModel>
+    [ECSDI]
+    public class ClickTo${FEATURENAME}ButtonsSystem : IEcsInitSystem, IEcsRunSystem
     {
-        public TextMeshProUGUI text;
-        public Button button;
-        
-        protected override UniTask OnInitialize(${FEATURENAME}ViewModel model)
+        private EcsWorld _world;
+        private EcsFilter _viewFilter;
+
+        public void Init(IEcsSystems systems)
         {
-            this.Bind(button, model.click)
-                .Bind(model.text, text);
+            _world = systems.GetWorld();
             
-            return base.OnInitialize(model);
+            _viewFilter = _world
+                .ViewFilter<${FEATURENAME}ViewModel>()
+                .End();
+        }
+
+        public void Run(IEcsSystems systems)
+        {
+            foreach (var viewEntity in _viewFilter)
+            {
+                var model = _world.GetViewModel<${FEATURENAME}ViewModel>(viewEntity);
+                
+                if (!model.click.Take()) continue;
+            }
         }
     }
 }

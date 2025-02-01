@@ -1,13 +1,11 @@
 namespace ${DIR_PATH.substring(7).replace('/', '.')}
 {
     using System;
-    using Leopotam.EcsLite;
-    using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// Represents a request to show the ${FEATURENAME}.
     /// </summary>
-#[[#if ENABLE_IL2CPP
+ #[[#if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
 
     [Il2CppSetOption(Option.NullChecks, false)]
@@ -15,19 +13,8 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif]]#
     [Serializable]
-    [ECSDI]
-    public class ${FEATURENAME}System : IEcsInitSystem, IEcsRunSystem
+    public struct Show${FEATURENAME}Request
     {
-        private EcsWorld _world;
-
-        public void Init(IEcsSystems systems)
-        {
-            _world = systems.GetWorld();
-        }
-
-        public void Run(IEcsSystems systems)
-        {
-
-        }
+        public bool ShowIsStarted;
     }
 }
