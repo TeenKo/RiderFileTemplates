@@ -27,7 +27,7 @@ Before installing the templates, decide if you want to use them in all Rider pro
 1. Download the required template files.
 2. Navigate to the directory:
    ```
-   ...\Users\"USER"\AppData\Roaming\JetBrains\Rider"VERSION"\fileTemplates
+   ...\Users\"USER"\AppData\Roaming\JetBrains\Rider"VERSION"
    ```
    > If the `fileTemplates` folder does not exist, create it.
 3. Copy the contents of the `Default` folder into this directory.
@@ -40,7 +40,7 @@ Before installing the templates, decide if you want to use them in all Rider pro
 1. Download the required template files.
 2. Navigate to the directory:
    ```
-   ...\"PROJECT NAME"\.idea\.idea."PROJECT NAME"\.idea\fileTemplates
+   ...\"PROJECT NAME"\.idea\.idea."PROJECT NAME"\.idea
    ```
    > If the `fileTemplates` folder does not exist, create it.
 3. Copy the contents of the `Project` folder into this directory.
