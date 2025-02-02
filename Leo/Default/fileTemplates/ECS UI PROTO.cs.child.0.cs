@@ -1,9 +1,11 @@
 namespace ${DIR_PATH.substring(7).replace('/', '.')}
 {
     using System;
-    using UniGame.UiSystem.Runtime;
-    
-#[[#if ENABLE_IL2CPP
+
+    /// <summary>
+    /// Represents a request to hide the ${FEATURENAME}.
+    /// </summary>
+ #[[#if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
 
     [Il2CppSetOption(Option.NullChecks, false)]
@@ -11,7 +13,7 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif]]#
     [Serializable]
-    public class ${FEATURENAME}ViewModel : ViewModelBase
+    public struct Hide${FEATURENAME}Request
     {
 
     }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="ECS GAME LITE.cs" file-name="${FEATURENAME}/${FEATURENAME}Feature" reformat="true" live-template-enabled="true">
+        <template name="ECS GAME LITE.cs.child.0.asmdef" file-name="${FEATURENAME}/${FEATURENAME}" reformat="true" live-template-enabled="false" />
+        <template name="ECS GAME LITE.cs.child.1.cs" file-name="${FEATURENAME}/Systems/${FEATURENAME}System" reformat="true" live-template-enabled="false" />
+        <template name="ECS GAME LITE.cs.child.2.cs" file-name="${FEATURENAME}/Components/${FEATURENAME}Component" reformat="true" live-template-enabled="false" />
+        <template name="ECS GAME LITE.cs.child.3.cs" file-name="${FEATURENAME}/Aspects/${FEATURENAME}Aspect" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="ECS GAME LITE.cs.child.0.asmdef" file-name="${FEATURENAME}/${FEATURENAME}" reformat="true" live-template-enabled="false" />
+      <template name="ECS GAME LITE.cs.child.1.cs" file-name="${FEATURENAME}/Systems/${FEATURENAME}System" reformat="true" live-template-enabled="false" />
+      <template name="ECS GAME LITE.cs.child.2.cs" file-name="${FEATURENAME}/Components/${FEATURENAME}Component" reformat="true" live-template-enabled="false" />
+      <template name="ECS GAME LITE.cs.child.3.cs" file-name="${FEATURENAME}/Aspects/${FEATURENAME}Aspect" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs" file-name="${FEATURENAME}/${FEATURENAME}Feature" reformat="true" live-template-enabled="true">
+        <template name="ECS UI LITE.cs.child.0.cs" file-name="${FEATURENAME}/Components/Requests/Hide${FEATURENAME}Request" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.1.cs" file-name="${FEATURENAME}/Systems/ClickTo${FEATURENAME}ButtonsSystem" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.2.asmdef" file-name="${FEATURENAME}/${FEATURENAME}Feature" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.3.cs" file-name="${FEATURENAME}/Systems/Show${FEATURENAME}System" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.4.cs" file-name="${FEATURENAME}/Components/Requests/Show${FEATURENAME}Request" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.5.cs" file-name="${FEATURENAME}/Models/${FEATURENAME}ViewModel" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.6.cs" file-name="${FEATURENAME}/Views/${FEATURENAME}View" reformat="true" live-template-enabled="false" />
+        <template name="ECS UI LITE.cs.child.7.cs" file-name="${FEATURENAME}/Aspects/${FEATURENAME}Aspect" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="ECS UI LITE.cs.child.0.cs" file-name="${FEATURENAME}/Components/Requests/Hide${FEATURENAME}Request" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.1.cs" file-name="${FEATURENAME}/Systems/ClickTo${FEATURENAME}ButtonsSystem" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.2.asmdef" file-name="${FEATURENAME}/${FEATURENAME}Feature" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.3.cs" file-name="${FEATURENAME}/Systems/Show${FEATURENAME}System" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.4.cs" file-name="${FEATURENAME}/Components/Requests/Show${FEATURENAME}Request" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.5.cs" file-name="${FEATURENAME}/Models/${FEATURENAME}ViewModel" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.6.cs" file-name="${FEATURENAME}/Views/${FEATURENAME}View" reformat="true" live-template-enabled="false" />
+      <template name="ECS UI LITE.cs.child.7.cs" file-name="${FEATURENAME}/Aspects/${FEATURENAME}Aspect" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</project>

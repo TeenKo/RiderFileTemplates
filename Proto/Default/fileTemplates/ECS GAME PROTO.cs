@@ -6,7 +6,7 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
     using UnityEngine;
     #set($d = $DIR_PATH.substring(7).replace('/', '.'))
 
-    [CreateAssetMenu(menuName = "Proto Features/Ui/${FEATURENAME} Feature")]
+    [CreateAssetMenu(menuName = "Proto Features/${FEATURENAME} Feature")]
     public class ${FEATURENAME}Feature : BaseLeoEcsFeature
     {
         public sealed override UniTask InitializeAsync(IProtoSystems ecsSystems)
