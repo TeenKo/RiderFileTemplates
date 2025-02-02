@@ -14,7 +14,7 @@ To access File Templates in Rider:
 
 1. Go to `File -> Settings -> Editor -> File Templates -> Other Languages.`
 
-
+![Settings screenshot](https://github.com/user-attachments/assets/3a3b6bfc-cdf6-48c5-ad82-4a884e0440be)
 
 ---
 
@@ -80,7 +80,7 @@ After setting up the templates and selecting the appropriate Scheme, you can sta
 3. Choose the required template from the list.
 4. Done! Enjoy the efficiency.
 
-
+![Template usage screenshot](https://github.com/user-attachments/assets/8d865da6-6c01-4058-8dc8-5036f804a9d5)
 
 ---
 
