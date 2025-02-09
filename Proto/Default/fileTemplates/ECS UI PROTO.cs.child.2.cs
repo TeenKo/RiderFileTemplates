@@ -49,16 +49,16 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
                     continue;
                 }
 
-                ref var showWinScreenRequest = ref _aspect.Show.Get(requestEntity);
+                ref var showScreenRequest = ref _aspect.Show.Get(requestEntity);
 
-                if (showWinScreenRequest.ShowIsStarted) continue;
+                if (showScreenRequest.ShowIsStarted) continue;
 
                 var newViewEntity = _world.NewEntity();
                 ref var viewRequest = ref _viewAspect.CreateLayoutView.Add(newViewEntity);
                 viewRequest.View = nameof(${FEATURENAME}View);
                 viewRequest.LayoutType = ViewType.Screen.ToStringFromCache();
 
-                showWinScreenRequest.ShowIsStarted = true;
+                showScreenRequest.ShowIsStarted = true;
             }
         }
     }
