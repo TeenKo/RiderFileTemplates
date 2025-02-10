@@ -8,6 +8,7 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
     using UniGame.LeoEcs.Bootstrap.Runtime;
     using UniGame.LeoEcs.ViewSystem.Extensions;
     using UnityEngine;
+    using Leopotam.EcsLite.ExtendedSystems;
     #set($d = $DIR_PATH.substring(7).replace('/', '.'))
 
     [CreateAssetMenu(menuName = "ECS Features/Ui/${FEATURENAME} Feature")]
@@ -21,6 +22,9 @@ namespace ${DIR_PATH.substring(7).replace('/', '.')}
             // System that handles clicking on ${FEATURENAME} buttons to trigger specific actions.
             ecsSystems.Add(new ClickTo${FEATURENAME}ButtonsSystem());
             
+            // Deleted used Hide${FEATURENAME}Request
+            ecsSystems.DelHere<Hide${FEATURENAME}Request>();
+            // Close View
             ecsSystems.CloseOn<Hide${FEATURENAME}Request, ${FEATURENAME}ViewModel>();
             
             return UniTask.CompletedTask;
